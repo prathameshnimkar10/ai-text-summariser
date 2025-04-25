@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
 
     try {
         const response = await axios.post(
-            "https://router.huggingface.co/hf-inference/models/facebook/bart-large-cnn",
+            "https://api-inference.huggingface.co/models/facebook/bart-large-cnn",
             data,
             {
                 headers: {
