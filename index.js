@@ -9,9 +9,9 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.get("/", (req, res) => {
-    res.send("Welcome to my AI-Text Summariser");
-})
+// app.get("/", (req, res) => {
+//     res.send("Welcome to my AI-Text Summariser");
+// })
 
 app.post("/api/summarise", async (req, res) => {
     const { text_to_sum } = req.body;
