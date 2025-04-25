@@ -1,15 +1,11 @@
 {
   "name": "ai-text-summariser",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "echo 'use vercel dev instead'"
   },
-
   "dependencies": {
     "axios": "^1.9.0",
-    "body-parser": "^2.2.0",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "dotenv": "^16.5.0"
   }
 }
