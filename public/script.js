@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const summarised_textarea = document.getElementById("summary");
     
     submitButton.disabled = true;
-    
-    
+        
     function verifyTextLength(event) {
         const textarea = event.target;
         
@@ -19,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function submitData(event) {
         submitButton.classList.add("submit-btn--loading");
+
+        summarised_textarea.value = "Generating summary...";
     
         const text_to_sum = textArea.value;
         var myHeaders = new Headers();
